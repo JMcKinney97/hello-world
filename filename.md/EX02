@@ -1,0 +1,3 @@
+First we identified the candidte keys which are Pet name. 
+Next the Functional Dependices are Pet Name ->(PetType, PetBreed, PetDOB, OwnerLastName, OwnerFirstname, OwnerPhone,OwnerEmail), OwnerEmail( OwnerLastName,OwnerFirstName, OwnerPhone) OwnerPhone(OwnerLastName,OwnerFirstName,OwnerEmail)
+Break into two relations which are Owner and Pet. Owner -> (OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail) Pet-> (PetName, PetType, PetBreed, PetDOb, OwnerPhone)
