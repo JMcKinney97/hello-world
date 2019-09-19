@@ -1,3 +1,7 @@
 First we identified the candidte keys which are Pet name. 
 Next the Functional Dependices are Pet Name ->(PetType, PetBreed, PetDOB, OwnerLastName, OwnerFirstname, OwnerPhone,OwnerEmail), OwnerEmail( OwnerLastName,OwnerFirstName, OwnerPhone) OwnerPhone(OwnerLastName,OwnerFirstName,OwnerEmail)
 Break into two relations which are Owner and Pet. Owner -> (OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail) Pet-> (PetName, PetType, PetBreed, PetDOb, OwnerPhone)
+Then we did functinal dependencies for owner which is OwnerEmail-> (OwnerPhone OwnerLastName,OwnerFirstName), and OwnerPhone -> (OwnerLastName, OwnerFirstName, OwnerEmail) 
+So the owner Candidate Keys are OwnerPhone and OwnerEmail and Every Determinant is a candidate key. 
+So, for Pet we use PetName as the Candidate key 
+So at the end the relation is Owner -> (Ownerphone, OwnerLastname, OwnerFirstName,OwnerEmail) and Pet-> (PetType, PetBreed,PetDOB,OwnerEmail) 
