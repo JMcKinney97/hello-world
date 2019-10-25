@@ -1,0 +1,44 @@
+Park-A-Lot DPB 3
+For our company Park-A-Lot, we focus on getting students and staff parking spots around various different campuses in the US. The main tables that we have are School, Staff, Student, and Parking Lot. For the School Table we included the SchoolID which is our primary key for the table, SchoolName, and School location. 
+For the next table we choose to do Staff, this includes the Staff_ID which is the primary key, first name, last name, staff account, and vehicle id which is the foreign key. 
+Next we did the Student table, this consists of similar things in the staff table. For the primary key we choose Student_ID, First name Last name, Major, and Vehicle_ID as the Foregin Key. For Staff and Student we chose Vehicle_ID as the foreign key due to the fact that students and staff parking in the lot will have to have a car. 
+In the Vehicle Table we put Vehicle_ID as the Primary key, then under that we have license plate number, registration, and make.
+In the Parking Lot table we have Lot_ID as the Primary Key, lot name, lot location, and lot capacity.  
+Then we have an account table which consists of School_ID, Staff_ID, and Student_ID and we labeled these all as foreign keys. Last we have Lot_Occupation, this consists of Vehicle_ID and Lot_ID. This is representative of availabilities within each lot.
+
+
+
+
+School to Parking lot
+School and Parking Lot have a mandatory relationship as we need to know what parking lots are available to each school. The school connect to parking lot as a one or many relationship as there can be multiple parking lots for each school. There you can find how busy each parking lot is for a school. Each parking lot is identified with a school. 
+
+School to Students 
+School and students have mandatory relationship as students need to be identified with a school. Students have a one or many relationship with the school as if you want to look up students by major for each school. This is helpful as for example the business and engineering majors from NIU should have priority when parking by the engineering building and barsema since that's where most of their classes are. 
+
+School to Staff 
+School and staff have a mandatory relationship due to the fact that staff members are identified by their school. Staff members have a one or many relationship with the school if you want to look up by courses for each school. Similar to the students, business and engineering educators would have priority when it comes to the parking lot closer to Barsema hall due to the convenience of the location. 
+
+
+
+
+Staff to Vehicle 
+The staff and vehicle relationship varies from the other ones. In this instance, vehicles will have a one to one relationship with staff, as each vehicle will have one staff member belonging to it. On the other hand, staff will have an optional relationship to vehicle, as there may be staff that may not necessarily be assigned to a vehicle.
+
+School to Account 
+Schools have a mandatory relationship with accounts because every account has to be associated with a school. Every school can have multiple accounts but every account has one school. Each student would be registered on their account to one school.
+
+Staff to Account 
+Staff will have a one to one relationship with account because every staff member that uses the app will have their own account. The same for every account, it will only be registered to one person, whether its a staff member or student. 
+
+Students to Vehicle 
+Student to Vehicle have a strong relationship. This is due to the fact that Every student who is using the app/is parking in the lot has a vehicle of some sort. There is a one to one relationship in this situation which we have created. Similar to how parking works now we one car per one registered student. 
+
+
+Parking Lot  to Vehicle
+Parking Lot to vehicle is a strong relationship. In this situation many vehicles can use many different parking lots. This is due to the fact that many students do not just have class in one building. Therefore sometimes it is easier to drive to a different lot. Along with that lots hold multiple different cars and each car does need to use the same spot every time.
+
+Parking Lot to Lot Occupation
+The parking lot and lot occupation varies from the other ones. In this instance, if the parking lot if full the higher the lot occupation is. The parking lot can hold many different types of vehicles of all sorts of shapes and sizes like the vehicle and lot ID. 
+
+Student to Account 
+Student and account have mandatory relationship as students need to be identified with what the correct account. Students have a one or many relationship with the account as if you want to look up students by student ID, staff ID, or school ID.
